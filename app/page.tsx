@@ -114,6 +114,16 @@ const EXPERIENCE = [
       "Processed audio, video, PDFs, and presentations via Cloud Speech-to-Text V2 into a unified RAG corpus",
     ],
   },
+  {
+    role: "Research Intern",
+    company: "Tata Institute of Fundamental Research (TIFR)",
+    period: "Summer 2024",
+    points: [
+      "Built an interactive 3D electromagnetic induction simulator using Three.js, visualizing Faraday's and Lenz's laws with precomputed magnetic field streamlines",
+      "Developed a Python pipeline to compute magnetic field streamline data and export as JSON for real-time 3D rendering in the browser",
+      "Deployed as a zero-install web application on GitHub Pages for physics education and research visualization",
+    ],
+  },
 ];
 
 const SKILL_GROUPS = [
@@ -175,18 +185,29 @@ export default function Home() {
             background: `linear-gradient(180deg, var(--hero-gradient-from) 0%, var(--hero-gradient-to) 100%)`,
           }}
         >
-          <div className="animate-fade-up">
-            <div className="mb-4 inline-block rounded-full border border-[var(--border)] bg-[var(--card)] px-3 py-1 text-xs text-[var(--muted)]">
-              MS Computer Science @ Rice University &middot; 3.96 GPA
+          <div className="flex flex-col-reverse items-start gap-8 sm:flex-row sm:items-center sm:gap-12">
+            <div className="flex-1">
+              <div className="animate-fade-up">
+                <div className="mb-4 inline-block rounded-full border border-[var(--border)] bg-[var(--card)] px-3 py-1 text-xs text-[var(--muted)]">
+                  MS Computer Science @ Rice University &middot; 3.96 GPA
+                </div>
+                <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
+                  Hi, I&apos;m{" "}
+                  <span style={{ color: "var(--accent)" }}>Shizuka</span>
+                </h1>
+              </div>
+              <p className="animate-fade-up-delay-1 mt-5 max-w-xl text-lg leading-relaxed text-[var(--muted)]">
+                I gravitate toward problems where the model is only half the challenge. Where the real work is in how you move data, orchestrate compute, and build something that holds up under real constraints. I care as much about the system around the model as the model itself.
+              </p>
             </div>
-            <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-              Hi, I&apos;m{" "}
-              <span style={{ color: "var(--accent)" }}>Shizuka</span>
-            </h1>
+            <div className="animate-fade-up shrink-0">
+              <img
+                src="/photo.jpg"
+                alt="Shizuka Dara"
+                className="h-36 w-36 rounded-full border-2 border-[var(--border)] object-cover shadow-lg sm:h-44 sm:w-44"
+              />
+            </div>
           </div>
-          <p className="animate-fade-up-delay-1 mt-5 max-w-xl text-lg leading-relaxed text-[var(--muted)]">
-          I gravitate toward problems where the model is only half the challenge. Where the real work is in how you move data, orchestrate compute, and build something that holds up under real constraints. I care as much about the system around the model as the model itself.
-          </p>
           <div className="animate-fade-up-delay-2 mt-8 flex gap-3">
             {SOCIAL_LINKS.map((s) => (
               <a
