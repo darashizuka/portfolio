@@ -117,7 +117,7 @@ const EXPERIENCE = [
   {
     role: "Research Intern",
     company: "Tata Institute of Fundamental Research (TIFR)",
-    period: "Summer 2024",
+    period: "May — Aug 2024",
     points: [
       "Built an interactive 3D electromagnetic induction simulator using Three.js, visualizing Faraday's and Lenz's laws with precomputed magnetic field streamlines",
       "Developed a Python pipeline to compute magnetic field streamline data and export as JSON for real-time 3D rendering in the browser",
