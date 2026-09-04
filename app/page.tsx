@@ -124,6 +124,16 @@ const EXPERIENCE = [
       "Deployed as a zero-install web application on GitHub Pages for physics education and research visualization",
     ],
   },
+  {
+    role: "Data Science Research Intern",
+    company: "University of Alabama (Bandi Research Group)",
+    period: "May — Aug 2023",
+    points: [
+      "Engineered a positioning algorithm from scratch by parsing RINEX navigation data to extract broadcast ephemeris and satellite clock parameters",
+      "Determined 3D receiver coordinates using Multivariate Newton's Method to solve a system of non-linear equations",
+      "Researched error mitigation strategies for satellite clock biases, relativistic effects, and geodetic transformations from ECEF frames to Latitude/Longitude coordinates",
+    ],
+  },
 ];
 
 const SKILL_GROUPS = [
@@ -314,7 +324,7 @@ export default function Home() {
           <div className="mb-12">
             <h2 className="text-2xl font-bold tracking-tight">Experience</h2>
             <p className="mt-2 text-[var(--muted)]">
-              Internships in ML infrastructure and AI engineering.
+              Internships in ML infrastructure, AI engineering, and research.
             </p>
           </div>
           <div className="relative space-y-12 pl-8 before:absolute before:left-[7px] before:top-2 before:h-[calc(100%-16px)] before:w-px before:bg-[var(--timeline-line)]">
