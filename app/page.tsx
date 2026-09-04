@@ -79,6 +79,19 @@ const PROJECTS = [
     color: "#ef4444",
   },
   {
+    title: "Multimodal AI Coding Interviewer",
+    description:
+      "Real-time AI mock interview platform combining voice interaction, webcam-based distraction detection via a custom ResNet-18 classifier, and in-browser Python execution via Pyodide — with structured post-interview feedback.",
+    tags: ["React", "Socket.IO", "Groq API", "PyTorch", "Pyodide"],
+    metrics: [
+      { label: "Modalities", value: "3" },
+      { label: "Questions", value: "54" },
+      { label: "Detection", value: "1 FPS" },
+    ],
+    github: "https://github.com/xqsong-angie/Realtime-Coding-Interviewer",
+    color: "#06b6d4",
+  },
+  {
     title: "Pore-Forming Protein Classification",
     description:
       "ML pipeline benchmarking SVM, Random Forest, XGBoost, and neural networks across 7 protein feature representations including ESM and ProtBERT embeddings.",
