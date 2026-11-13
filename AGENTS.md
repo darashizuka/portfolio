@@ -49,7 +49,7 @@ This site is data-driven. Content lives in:
 - `TimelineWheel` — arc wheel on desktop, vertical swipe layout on mobile (<640px)
 - `Trajectory` — home page widget showing first 2 timeline entries with dot-line-dot interaction
 - `CategoryFilter` — client component filtering projects by `categories.includes()`
-- `ContactForm` — fields build a mailto href live; submit button is an `<a>` tag (not `<form>` submit) to satisfy browser user-gesture requirements
+- `ContactForm` — POSTs to Web3Forms API; shows sending/sent/error states
 - `FadeIn` — IntersectionObserver scroll-reveal wrapper
 
 ## Important Patterns
@@ -59,7 +59,7 @@ This site is data-driven. Content lives in:
 - The `PINNED_PROJECTS` filter controls what shows on the home page Selected Work section
 - The `TIMELINE` array (newest first) feeds both `/past` wheel and home page trajectory
 - `getRecentPosts(3)` from `lib/mdx.ts` feeds the home page workbench section
-- `mailto:` links must not have `target="_blank"` — that opens them as URLs instead of triggering the email client
+- No `mailto:` links in navigation or footer — contact goes through the Web3Forms form on `/contact`
 
 ## Navigation Order
 

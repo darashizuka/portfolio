@@ -74,7 +74,7 @@ export const PROJECTS: Project[] = [
     description:
       "This website. Data-driven, editorial-style portfolio built with Next.js, Tailwind, and MDX.",
     tags: ["Next.js", "React", "Tailwind", "MDX"],
-    links: {},
+    links: {github: "https://github.com/darashizuka/portfolio"},
     pinned: false,
     year: 2026,
   },

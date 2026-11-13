@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { ArrowUpRight } from "lucide-react";
-import { SITE } from "@/src/data/site";
 import { FadeIn } from "../components/FadeIn";
 import { ContactForm } from "./ContactForm";
 
@@ -54,26 +53,6 @@ export default function ContactPage() {
         {/* Left: contact info */}
         <FadeIn delay={200}>
           <div className="space-y-10">
-            {/* Email */}
-            <div>
-              <span
-                className="text-[11px] uppercase tracking-[0.15em] font-mono"
-                style={{ color: "var(--text-muted)" }}
-              >
-                Email
-              </span>
-              <div className="mt-3">
-                <a
-                  href={`mailto:${SITE.email}`}
-                  className="inline-flex items-center gap-1 text-base link-hover"
-                  style={{ color: "var(--text)" }}
-                >
-                  {SITE.email}
-                  <ArrowUpRight size={14} />
-                </a>
-              </div>
-            </div>
-
             {/* Elsewhere */}
             <div>
               <span

@@ -83,7 +83,11 @@ Edit `src/data/site.ts` for name, title, bio, location, email.
 
 ## Edit Social Links
 
-Edit `src/data/social.ts` for footer links (GitHub, LinkedIn, Email, Resume).
+Edit `src/data/social.ts` for footer links (GitHub, LinkedIn, Resume).
+
+## Contact Form
+
+The contact form uses [Web3Forms](https://web3forms.com) to deliver submissions to your email. The access key is in `app/contact/ContactForm.tsx`. To change the receiving email, update the key at web3forms.com.
 
 ## Update Resume
 
