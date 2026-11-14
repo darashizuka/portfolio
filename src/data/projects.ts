@@ -12,6 +12,20 @@ export const PROJECTS: Project[] = [
     pinned: true,
     year: 2025,
   },
+
+  {
+    title: "Multi-agent invoice system",
+    slug: "agentic invoice",
+    categories: ["ml"],
+    description:
+      "Uses LangGraph and grok agents to automate end-to-end invoice processing, including ingestion, validation and approval",
+    tags: ["LangGraph", "Multi-agent", "LangChain", "Grok"],
+    links: { github: "https://github.com/darashizuka/acme_invoice_system" },
+    pinned: false,
+    year: 2026,
+  },
+
+
   {
     title: "Composed Image Retrieval for Fashion",
     slug: "fashion-cir",
