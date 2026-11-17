@@ -66,7 +66,7 @@ export const PROJECTS: Project[] = [
     description:
       "AI-powered product management assistant for prioritization, spec writing, and decision support.",
     tags: ["LLM", "React", "Python"],
-    links: { github: "https://github.com/darashizuka/pm-copilot" },
+    links: { github: "https://github.com/darashizuka/pm-copilot", live:"https://youtu.be/cxcYETDBgVM" },
     pinned: false,
     year: 2026,
   },
