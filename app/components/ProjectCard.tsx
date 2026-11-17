@@ -77,28 +77,40 @@ export function ProjectCard({
           ))}
         </div>
         {hasLink ? (
-          <div className="flex items-center gap-3">
-            {project.links.paper && (
-              <a
-                href={project.links.paper}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={(e) => e.stopPropagation()}
-                className="text-[11px] font-mono uppercase tracking-wider transition-opacity hover:opacity-70"
-                style={{ color: "var(--accent)" }}
-              >
-                Publication ↗
-              </a>
-            )}
-            <ArrowUpRight
-              size={20}
-              className="shrink-0 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-              style={{ color: "var(--text-muted)" }}
-            />
-          </div>
-        ) : (
-          <Lock size={16} style={{ color: "var(--text-muted)" }} />
-        )}
+  <div className="flex items-center gap-3">
+    {project.links.live && (
+      <a
+        href={project.links.live}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={(e) => e.stopPropagation()}
+        className="text-[11px] font-mono uppercase tracking-wider transition-opacity hover:opacity-70"
+        style={{ color: "var(--accent)" }}
+      >
+        Demo ↗
+      </a>
+    )}
+    {project.links.paper && (
+      <a
+        href={project.links.paper}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={(e) => e.stopPropagation()}
+        className="text-[11px] font-mono uppercase tracking-wider transition-opacity hover:opacity-70"
+        style={{ color: "var(--accent)" }}
+      >
+        Publication ↗
+      </a>
+    )}
+    <ArrowUpRight
+      size={20}
+      className="shrink-0 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+      style={{ color: "var(--text-muted)" }}
+    />
+  </div>
+) : (
+  <Lock size={16} style={{ color: "var(--text-muted)" }} />
+)}
       </div>
     </div>
   );

@@ -60,7 +60,7 @@ export const PROJECTS: Project[] = [
     year: 2026,
   },
   {
-    title: "PM Copilots",
+    title: "PM Copilot",
     slug: "pm-copilot",
     categories: ["ml"],
     description:
