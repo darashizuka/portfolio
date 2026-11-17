@@ -60,13 +60,14 @@ export const PROJECTS: Project[] = [
     year: 2026,
   },
   {
-    title: "PM Copilot",
+    title: "PM Copilots",
     slug: "pm-copilot",
     categories: ["ml"],
     description:
       "AI-powered product management assistant for prioritization, spec writing, and decision support.",
     tags: ["LLM", "React", "Python"],
-    links: { github: "https://github.com/darashizuka/pm-copilot", live:"https://youtu.be/cxcYETDBgVM" },
+    links: { github: "https://github.com/darashizuka/pm-copilot", 
+             live: "https://youtu.be/cxcYETDBgVM" },
     pinned: false,
     year: 2026,
   },
